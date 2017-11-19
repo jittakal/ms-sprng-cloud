@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+security:
+  user:
+    password: secret
+
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+
+spring:
+  cloud:
+    config:
+      username: user
+      password: secret
+      server:
+        git:
+          uri: file:///${user.home}/config-repo
