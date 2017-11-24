@@ -1,11 +1,14 @@
 spring:
   application:
     name: config-server
-#  cloud:
-#    config:
-#     uri: http://user@secret:127.0.0.1:8888
-#     username: user
-#     password: secret
+  profiles:
+    active: default    
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jittakal/ms-config-repo.git
+          force-pull: true
 #encrypt:
 #  failOnError: false
 #  keyStore:
