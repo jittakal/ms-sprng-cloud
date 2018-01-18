@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: zuul-proxy
+
+zuul:
+  #Service will be mapped under /api URI
+  prefix: /api
+  routes:
+    demo-service:
+      path: /restserver/**
+      serviceId: DEMO-SERVICE
+    config-client:
+      path: /restclient/**
+      serviceId: CONFIG-CLIENT
+
+#Registering Zuul with Eureka as a Client
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    hostname: localhost
+
+#  This property sets the time in milliseconds after which the caller will observe a timeout and walk away from the command execution
+#  Increase Hystrix Timeout to 60 seconds. Default value is 1 second
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMiliSeconds: 60000
+      circuitBreaker:
+        sleepWindowInMiliseconds: 60000
+        errorThresholdPercentage: 5
+
