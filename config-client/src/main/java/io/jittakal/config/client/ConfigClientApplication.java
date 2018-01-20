@@ -35,7 +35,7 @@ public class ConfigClientApplication {
         return args -> LOGGER.info("config.client.msg is: [{}]", configClientMsg);
 	}
 
-	@Configuration
+	/*@Configuration
 	class Config{
 
 		@LoadBalanced
@@ -43,6 +43,6 @@ public class ConfigClientApplication {
 		public RestTemplate restTemplate(){
 			return new RestTemplate();
 		}
-	}
+	}*/
 		
 }
