@@ -39,3 +39,5 @@ Hystrix Dashboard: <http://localhost:9090/hystrix/>
 Hystrix Stream: <http://localhost:8082/hystrix.stream/>
 
 For client-side Load balancing we need to launch multiple instance of the Demo-Service on different ports(eg. 8081, 8085)
+
+Auth Server: <http://localhost:9001>

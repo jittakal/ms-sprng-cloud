@@ -36,3 +36,16 @@ hystrix:
         sleepWindowInMiliseconds: 60000
         errorThresholdPercentage: 5
 
+security:
+  oauth2:
+    client:
+      #clientId: c1b05d181db1388c9ee6
+      #clientSecret: 0fe868fd5fdb1f95266cec2e32ec76238e4c8950
+      clientId: ef258ae12c9bb9b18712
+      clientSecret: b49df3a27bbee118616739ec884231f5a12491fc
+      accessTokenUri: https://github.com/login/oauth/access_token
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://api.github.com/user
+      preferTokenInfo: false

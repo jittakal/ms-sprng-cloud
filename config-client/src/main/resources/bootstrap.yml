@@ -17,3 +17,12 @@ hystrix:
           circuitBreaker:
             sleepWindowInMiliseconds: 60000
             errorThresholdPercentage: 5
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: https://api.github.com/user
+
+logging:
+  level:
+    org.springframework.cloud: DEBUG
