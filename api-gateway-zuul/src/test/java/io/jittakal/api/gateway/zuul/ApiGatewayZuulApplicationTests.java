@@ -1,4 +1,4 @@
-package io.jittakal.apigatewayzuul;
+package io.jittakal.api.gateway.zuul;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
