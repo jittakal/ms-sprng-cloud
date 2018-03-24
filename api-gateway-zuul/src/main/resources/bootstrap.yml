@@ -39,8 +39,8 @@ hystrix:
 security:
   oauth2:
     client:
-      clientId: ef258ae12c9bb9b18712
-      clientSecret: b49df3a27bbee118616739ec884231f5a12491fc
+      clientId: xxxxxxx
+      clientSecret: xxxxxxx
       accessTokenUri: https://github.com/login/oauth/access_token
       userAuthorizationUri: https://github.com/login/oauth/authorize
       clientAuthenticationScheme: form
