@@ -6,3 +6,23 @@ spring:
   cloud:
     config:
       uri: http://127.0.0.1:8888
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMiliSeconds: 60000
+          circuitBreaker:
+            sleepWindowInMiliseconds: 60000
+            errorThresholdPercentage: 5
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: https://api.github.com/user
+
+logging:
+  level:
+    org.springframework.cloud: DEBUG
