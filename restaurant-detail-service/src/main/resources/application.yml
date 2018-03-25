@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: restaurant-service
+
+  datasource:
+    url: jdbc:postgresql://192.168.99.100:30816/springbootdb
+    username: postgres
+    password: postgres
+
+  jpa:
+    generate-ddl: yes
+    hibernate:
+      ddl-auto: update
