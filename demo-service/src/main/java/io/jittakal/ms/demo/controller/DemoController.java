@@ -1,16 +1,16 @@
-package io.jittakal.msproducer.controller;
+package io.jittakal.ms.demo.controller;
 
 
-import io.jittakal.msproducer.model.TestData;
+import io.jittakal.ms.demo.model.Demo;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TestController {
+public class DemoController {
 
     @RequestMapping("/service")
-    public TestData getTestData(){
-        TestData test = new TestData();
+    public Demo getTestData(){
+        Demo test = new Demo();
         test.setTestData1("Hello");
         test.setTestData2("World");
         test.setTestData3("!!!");

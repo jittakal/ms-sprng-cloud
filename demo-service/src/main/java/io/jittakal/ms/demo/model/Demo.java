@@ -1,6 +1,6 @@
-package io.jittakal.msproducer.model;
+package io.jittakal.ms.demo.model;
 
-public class TestData {
+public class Demo {
 
     private String testData1;
     private String testData2;
